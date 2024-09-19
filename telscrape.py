@@ -293,9 +293,9 @@ try:
             client.loop.run_until_complete(download_specific_files(file_indexes))
         else:
             print("Usage:")
-            print("  python3 teledld.py -l              # List all files")
-            print("  python3 teledld.py -l -f jpg,png    # List files excluding these extensions")
-            print("  python3 teledld.py -d 1,2,3        # Download specific files by index")
+            print("  python3 telscrape.py -l              # List all files")
+            print("  python3 telscrape.py -l -f jpg,png    # List files excluding these extensions")
+            print("  python3 telscrape.py -d 1,2,3        # Download specific files by index")
     else:
         # Default behavior (download all files)
         with client:
