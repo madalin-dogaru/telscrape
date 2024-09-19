@@ -5,13 +5,10 @@ A tool that lets you list/download attachments from a Telegram **PRIVATE GROUP**
 
 Note that for my needs and also because of Telegram's queing system I've decided to go for sequential downloading. 
 
-![Screenshot 2024-09-19 at 23 27 43](https://github.com/user-attachments/assets/4d7209c5-2928-4f32-b7cf-a30395ff551d)
 
-![Screenshot 2024-09-19 at 23 27 53](https://github.com/user-attachments/assets/b1bc453f-81fc-4657-9398-9fb1fbefc24c)
 
-![Screenshot 2024-09-19 at 23 28 14](https://github.com/user-attachments/assets/ba59a118-4b3e-49d1-93d8-40445a508d6c)
 
-![Screenshot 2024-09-19 at 23 28 29](https://github.com/user-attachments/assets/75c9ab10-c1ed-4442-9981-54d461940e27)
+
 
 ## How to Get Your Telegram `api_id`, `api_hash`, and `group_name`
 
@@ -42,11 +39,17 @@ Once you have your `api_id`, `api_hash`, and `group_name`:
 
 3. **List all the files in a group**:
 
+![Screenshot 2024-09-19 at 23 27 43](https://github.com/user-attachments/assets/4d7209c5-2928-4f32-b7cf-a30395ff551d)
+
+
    To list all the files in a group, run:
    ```bash
    python3 telscrape.py -l  # for groups that have 1500+ files, it might take 2-3 minutes to list them, paralelization didnt help due to telegram limitations. 
    ```
    You can also exclude certain file types from the list using the `-f` flag, on top of the default filtering I've mentioned previously. For example:
+   
+  ![Screenshot 2024-09-19 at 23 28 14](https://github.com/user-attachments/assets/ba59a118-4b3e-49d1-93d8-40445a508d6c)
+
    ```bash
    python3 telscrape.py -l -f exe,pkg
    ```
@@ -58,12 +61,16 @@ Once you have your `api_id`, `api_hash`, and `group_name`:
    python3 telscrape.py -d 336
    ```
    This will download the file with index `336`. You can also download multiple files by passing a comma-separated list:
+   ![Screenshot 2024-09-19 at 23 27 53](https://github.com/user-attachments/assets/b1bc453f-81fc-4657-9398-9fb1fbefc24c)
+
    ```bash
    python3 telscrape.py -d 2,5,10
    ```
 
-5. **Download all files**:
-   If you want to download everything (except automatically filtered files like `.tgs` and `.webp`), just run:
+6. **Download all files**:
+   If you want to download everything (except automatically filtered files like `.tgs`, `.webp`, etc), just run:
+![Screenshot 2024-09-19 at 23 28 29](https://github.com/user-attachments/assets/75c9ab10-c1ed-4442-9981-54d461940e27)
+
    ```bash
    python3 telscrape.py
    ```
