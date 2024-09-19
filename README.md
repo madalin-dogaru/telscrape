@@ -77,7 +77,7 @@ You can manually exclude other file types with the `-f` flag when listing.
 
 ### Important Files:
 - **`downloaded_files.txt`**: 
-  This file keeps track of every file that’s been fully downloaded, so the app doesn’t re-download the same file next time you run it with the `-l` flag.
+  This file keeps track of every file that’s been fully downloaded, so the app doesn’t re-download the same file next time you run it with no flags.
   
 - **`index_to_message_id.txt`**: 
   When you list the files using the `-l` command, this file is generated. It maps the index of each file to its message ID in Telegram. This ensures that when you request to download a file by its index, the app grabs the right one.
