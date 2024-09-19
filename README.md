@@ -5,6 +5,14 @@ A tool that lets you list/download attachments from a Telegram **PRIVATE GROUP**
 
 Note that for my needs and also because of Telegram's queing system I've decided to go for sequential downloading. 
 
+
+![Screenshot 2024-09-19 at 23 28 29](https://github.com/user-attachments/assets/75c9ab10-c1ed-4442-9981-54d461940e27)
+
+
+
+
+
+
 ## How to Get Your Telegram `api_id`, `api_hash`, and `group_name`
 
 To use this app, you'll need to get your `api_id` and `api_hash` from Telegram, as well as the `group_name` (or username) of the group you're pulling files from.
