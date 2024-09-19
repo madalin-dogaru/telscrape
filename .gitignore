@@ -1,0 +1,24 @@
+# Ignore Python virtual environments
+venv/
+env/
+__pycache__/
+
+# Ignore sensitive configuration files
+*.session
+
+# Ignore the Telegram API credentials file if you decide to externalize it
+config.py
+config.json
+
+# Ignore downloaded files and directories
+telegram_downloads/
+downloaded_files.txt
+index_to_message_id.txt
+
+# Ignore log files
+*.log
+
+# Ignore temporary files and directories
+*.tmp
+*.swp
+.DS_Store
