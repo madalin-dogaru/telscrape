@@ -4,6 +4,7 @@
 A tool that lets you list/download attachments from a Telegram **PRIVATE GROUP** (when i have time i will implement functionality for public groups & channels as well) and keeps track of what’s been downloaded. It also lets you list files, filter specific extensions, and download individual files by index. 
 
 Note that for my needs and also because of Telegram's queing system I've decided to go for sequential downloading. 
+
 ![Screenshot 2024-09-19 at 23 27 43](https://github.com/user-attachments/assets/4d7209c5-2928-4f32-b7cf-a30395ff551d)
 
 ![Screenshot 2024-09-19 at 23 27 53](https://github.com/user-attachments/assets/b1bc453f-81fc-4657-9398-9fb1fbefc24c)
