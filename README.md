@@ -1,7 +1,7 @@
 
 # TelScrape
 
-A tool that lets you list/download attachments from a Telegram **PRIVATE GROUP** (when i have time i will implement functionality for public groups & channels as well) and keeps track of what’s been downloaded. It also lets you list files, filter specific extensions, and download individual files by index. 
+A tool that lets you list/download attachments from a Telegram **PRIVATE GROUP** or **PUBLIC CHANNEL** (when i have time i will implement functionality for public groups & private channels as well) and keeps track of what’s been downloaded. It also lets you list files, filter specific extensions, and download individual files by index. 
 
 Note that for my needs and also because of Telegram's queing system I've decided to go for sequential downloading. 
 
@@ -79,7 +79,7 @@ Once you have your `api_id`, `api_hash`, and `group_name`:
 
 ### Automatic Filtering
 The app automatically skips downloading certain irrelevant file types, like Telegram stickers and animations.
-For my needs I've included by default, when executing "python3 telscrape.py -l", an automatic filter of 'tgs', 'webp','mp4','jpg','jpeg','png' as there are not relevant to me. Feel free too adjust the code and remove them if you wish, I've added clear comments across the script. 
+For my needs I've included by default, when executing "python3 telscrape.py -l", an automatic filter of 'tgs', 'webp','mp4','jpg','jpeg','png' because these are not relevant to me.
 
 - `.tgs`  (Telegram stickers)
 - `.webp` (Telegram animations)
