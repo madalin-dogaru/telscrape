@@ -21,7 +21,7 @@ To use this app, you'll need to get your `api_id` and `api_hash` from Telegram, 
 
 2. **Find the Group's `group_name` or `channel_name`**:
     - Open the Telegram app and go to the group/channel you want to scrape files from.
-    - For both `Private Groups` and `Public Channels` you need to use the header title and not the link name. As an example you need "We Love Red Team" and not the link, like: @weloveredteam
+    - For both `Private Groups` and `Public Channels` you need to use the header title and not the link name. As an example you need "We Love Red Team" and not the group/channel link, e.g.: @weloveredteam
 
 ## How to Use the Tool
 
