@@ -64,7 +64,7 @@ def clean_partial_files(completed_files):
             print(f"Deleting partial file: {file}")
             os.remove(file_path)
 
-# Async function to download all attachments from the group sequentially
+# Async function to download all attachments from the group, sequentially
 async def download_attachments():
     await client.start()
 
